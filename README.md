@@ -298,6 +298,36 @@ end isNumeric
 - Files are **moved**, not copied
 - Existing files in the destination path are overwritten
 
+### Where Tibia Stores Screenshots on macOS
+
+By default, the Tibia client stores all in-game screenshots in the following location:
+
+```
+/Users/<your-username>/Library/Application Support/CipSoft GmbH/Tibia/packages/Tibia.app/Contents/Resources/screenshots
+```
+
+#### Important Note
+
+The **Tibia Screenshot Sorter.workflow** does **not** monitor, watch, or directly interact with this directory.
+
+It does **not**:
+- Open this folder
+- Read from it automatically
+- Move files from it unless you manually select them
+
+#### Recommended Practice
+
+To prevent accidental deletion or overwrite by the Tibia client, it is strongly advised that you:
+
+1. **Manually move** your screenshots from the client's screenshot folder to a safe directory (e.g. `~/Documents/TibiaScreenshots/`).
+2. Once the files are in a safe location, run the **Tibia Screenshot Sorter** from Finder via:
+   ```
+   Right-click → Quick Actions → Tibia Screenshot Sorter
+   ```
+3. This ensures that your gameplay records are preserved and archived properly, independently of the game client's lifecycle or updates.
+
+Avoid working directly in the client’s `Resources/screenshots` folder to reduce risk of file loss or permission issues.
+
 ---
 
 ## Licence
