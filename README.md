@@ -34,12 +34,12 @@ Given the input file:
 The output path will be:
 ```
 <ParentFolder>/
-└── Night'Flyn/
-└── Hotkey/
-└── 2025/
-└── 06/
-└── 07/
-└── 2025-06-07_170210376_Night'Flyn_Hotkey.png
+    └── Night'Flyn/
+        └── Hotkey/
+            └── 2025/
+                └── 06/
+                    └── 07/
+                        └── 2025-06-07_170210376_Night'Flyn_Hotkey.png
 ```
 
 Additionally, a metadata log file will be created:
